@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ping Project — снижение задержки до серверов</title>
+  <meta name="description" content="Ping Project находит самый быстрый маршрут до серверов и снижает пинг в один клик. Windows 10/11.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">
+        <span class="logo-dot"></span>
+        <span>Ping Project</span>
+      </a>
+      <div class="nav-links">
+        <a href="#demo">Интерфейс</a>
+        <a href="#how">Как это работает</a>
+        <a href="#features">Преимущества</a>
+        <a href="#download">Скачать</a>
+      </div>
+      <a class="btn-ghost nav-cta" href="#download">Скачать</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <p class="overline">Оптимизация сетевого соединения</p>
+      <h1>Ping Project</h1>
+      <p class="slogan">Пинг ниже. Игра быстрее.</p>
+      <p class="hero-sub">Находит самый быстрый маршрут до серверов и снижает задержку — в один клик, без лишних настроек.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#download">Скачать для Windows</a>
+        <a class="btn-ghost" href="#how">Как это работает</a>
+      </div>
+      <p class="hero-meta">до −40% пинг&nbsp;&nbsp;·&nbsp;&nbsp;один клик&nbsp;&nbsp;·&nbsp;&nbsp;Windows 10 / 11</p>
+    </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </header>
+
+  <section class="section" id="demo">
+    <div class="container">
+      <p class="kicker reveal">Интерфейс</p>
+      <h2 class="reveal">Ничего лишнего. Только пинг.</h2>
+      <p class="section-sub reveal">Крупный индикатор задержки, список серверов слева и одна кнопка — весь интерфейс помещается в один экран.</p>
+
+      <div class="mock reveal" id="mock">
+        <div class="mock-tb">
+          <span class="mock-dot"></span>
+          <span class="mock-name">Ping Project</span>
+          <span class="mock-win" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-side">
+            <div class="mock-label">Серверы</div>
+            <div class="mock-row active"><span>Cloudflare<small>1.1.1.1</small></span><b id="mockA">21</b></div>
+            <div class="mock-row"><span>Google<small>8.8.8.8</small></span><b>33</b></div>
+            <div class="mock-row"><span>Yandex<small>77.88.8.8</small></span><b>14</b></div>
+            <div class="mock-row"><span>Quad9<small>9.9.9.9</small></span><b>47</b></div>
+          </div>
+          <div class="mock-main">
+            <div class="mock-status"><span class="dot"></span>Подключено</div>
+            <div class="mock-num"><span id="mockNum">21</span><em>ms</em></div>
+            <div class="mock-sub">Текущая задержка · Cloudflare</div>
+            <div class="mock-progress"><i id="mockFill"></i></div>
+            <div class="mock-btn">Оптимизировать</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="container">
+      <p class="kicker reveal">Как это работает</p>
+      <h2 class="reveal">Три шага до низкого пинга</h2>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Диагностика</h3>
+          <p>Приложение замеряет отклик до всех доступных узлов в реальном времени и показывает точную картину сети.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">02</span>
+          <h3>Выбор маршрута</h3>
+          <p>Из всех узлов выбирается ближайший и самый быстрый сервер с минимальной задержкой.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">03</span>
+          <h3>Оптимизация</h3>
+          <p>Соединение переключается на оптимальный узел, DNS-кэш очищается. Маршрут остаётся актуальным при каждом замере.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <p class="kicker reveal">Преимущества</p>
+      <h2 class="reveal">Сделано для игры</h2>
+      <div class="features">
+        <div class="feature reveal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/>
+          </svg>
+          <h3>Точный маршрут</h3>
+          <p>Постоянный мониторинг отклика и мгновенное переключение на лучший узел.</p>
+        </div>
+        <div class="feature reveal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M2 12h4l3-8 4 16 3-8h6"/>
+          </svg>
+          <h3>Стабильный пинг</h3>
+          <p>Плавные замеры без скачков — индикатор показывает реальную картину соединения.</p>
+        </div>
+        <div class="feature reveal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+          </svg>
+          <h3>Один клик</h3>
+          <p>Вся оптимизация — одна кнопка. Без ручных настроек и командной строки.</p>
+        </div>
+        <div class="feature reveal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M20 4c-6 0-12 3-14 11l-2 5M6 15c6 1 10-2 12-9"/>
+          </svg>
+          <h3>Легковесность</h3>
+          <p>Минимум памяти, ноль фоновой активности и рекламы. Только пинг.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section download" id="download">
+    <div class="container">
+      <h2 class="reveal">Снизьте задержку сегодня</h2>
+      <p class="dl-meta reveal">Версия 1.0.0 · Windows 10 / 11 · 64-бит</p>
+      <a class="btn-primary btn-big reveal" href="https://github.com/Ping-Project-Premium/Ping-Project-Premium.github.io/releases/download/v1.0/PingProject-Setup.exe" download>Скачать для Windows</a>
+      <p class="dl-note reveal">Бесплатно · Без рекламы · Установка за минуту</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand"><span class="logo-dot"></span>© 2026 Ping Project</span>
+      <div class="footer-links">
+        <a href="#top">Наверх</a>
+        <a href="#">Поддержка</a>
+        <a href="#">Условия использования</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
